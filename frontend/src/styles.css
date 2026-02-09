@@ -1,0 +1,130 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Headings ===== */
+h2 {
+  margin-bottom: 16px;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+}
+
+/* ===== Form ===== */
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #2563eb;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1e4fd8;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* ===== Lists ===== */
+.employee-list {
+  list-style: none;
+}
+
+.employee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+}
+
+/* ===== States ===== */
+.loading {
+  color: #2563eb;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 10px;
+}
+
+.empty {
+  color: #666;
+  font-style: italic;
+}
