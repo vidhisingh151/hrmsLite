@@ -23,18 +23,6 @@ const EmployeeForm = () => {
     }
   };
 
-//   return (
-//     <form onSubmit={handleSubmit} className="mb-4">
-//       <h2 className="text-xl font-semibold mb-2">Add Employee</h2>
-//       <input placeholder="ID" name="employee_id" onChange={handleChange} required />
-//       <input placeholder="Full Name" name="full_name" onChange={handleChange} required />
-//       <input placeholder="Email" name="email" type="email" onChange={handleChange} required />
-//       <input placeholder="Department" name="department" onChange={handleChange} required />
-//       <button type="submit">Add</button>
-//     </form>
-//   );
-
-
      return (
   <div className="card">
     <h2>Add Employee</h2>
