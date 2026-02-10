@@ -44,3 +44,12 @@ def get_attendance_api(employee_id: str):
     if not records:
         return {"message": "No attendance records found"}
     return records
+
+# Get attendance for all employees
+@app.get("/attendance")
+def get_all_attendance():
+    from .crud import attendance_collection  # or whatever your MongoDB collection is
+    all_records = list(attendance_collection.find({}, {"_id": 0}))
+    if not all_records:
+        return {"message": "No attendance records found"}
+    return all_records
