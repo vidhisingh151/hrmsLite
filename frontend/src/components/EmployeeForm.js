@@ -16,7 +16,7 @@ const EmployeeForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/employees", employee);
+      const res = await axios.post("https://hrmslite-cf0k.onrender.com/employees", employee);
       alert(res.data.message);
     } catch (err) {
       alert(err.response.data.detail);
